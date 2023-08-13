@@ -36,4 +36,5 @@ urlpatterns = [
     path('saludo/<nombre>', saludo_con_nombre),
     path('calculo/<edad>', calcula_anio_nacimiento),
     path('probandohtml/', probandohtml),
+    path('probando2/', probando2),
 ]

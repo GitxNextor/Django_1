@@ -16,9 +16,17 @@
         <h4>Header h4</h4>
         <h5>Header h5</h5>
         <p>Este es el contenido del p&aacute;rrafo</p>
-        <p>Nombre: {{ nombre }}</p>
-        <p>Apellido: {{ apellido }}</p>
+        <p style= "color: red"> Nombre: {{ nombre }}</p>
+        <p style= "color: blue">Apellido: {{ apellido }}</p>
         <p>Edad: {{ edad }}</p>
+        <h3>Lista de Notas</h3>
+        {% for nota in lista_de_notas  %}
+            {% if nota >= 6%}
+                <p style= "color: green"><strong>Aprobado: {{ nota }}</strong></p>
+            {% else %}
+                <p style= "color: red"><em>No aprobado: {{ nota }}</em></p>
+            {% endif %}
+        {% endfor %}
 
     </body>
 </html>
